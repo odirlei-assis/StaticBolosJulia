@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+:root {
+    --font1: 'Poiret One', cursive;
+    --font2: 'Roboto', sans-serif;
+    --font3: 'Quicksand', sans-serif;
+    --font4: 'Indie Flower', cursive;
+
+    --cor3: #5B3331;
+}
+
+
+
+
+
+
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 150px;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+header .linha1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--font1);
+}
+
+header .linha1 img {
+    max-width: 200px;
+    width: 40%;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+header a:hover {
+    /* color: var(--cor3); */
+    scale: 1.1;
+    /* text-shadow: 3px 3px 2px #ff731c; */
+    /* text-shadow: 3px 3px 2px #81eeff; */
+    text-shadow: 3px 3px 2px #ffacb3;
+    transition: 500ms;
+
+}
+
+header .linha2 {
+    font-family: var(--font2);
+    margin-top: 5px;
+}
+
+
+
+
+
+
+/* BOLOS */
+.lista{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.lista .card{
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+    font-family: var(--font2);
+    padding-right: 20px;
+    min-height: 200px;
+    width: 90%;
+    max-width: 850px;
+}
+
+.lista .card:hover{
+    scale: 1.05;
+    border-radius: 10px;
+    box-shadow:
+        1px 1px 1px #000, 
+        0px 0px 20px #ff828c;
+        transition: 300ms;
+}
+
+.lista .card img{
+    height: 200px;
+}
+
+.lista h1{
+    font-family: var(--font4);
+    font-size: 38px;
+    align-self: center;
+}
+
+.lista .card h2{
+    font-family: var(--font1);
+}
+
+.lista .card span{
+    font-family: var(--font3);
+}
+
+.lista .card_bolo_texto{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.lista .card_bolo_texto > span{
+    align-self: flex-end;
+
+}
+
+.lista .card_bolo_texto > div > span{
+    margin-bottom: 5px;
+    font-weight: 600;
+    display: block;
+    font-family: var(--font2);
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    height: 150px;
+    background-color: var(--cor3);
+    font-family: var(--font1);
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+footer .footer_container a {
+    margin: 0 10px;
+}
+
+footer .footer_container a img {
+    height: 45px;
+}
